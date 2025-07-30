@@ -8,11 +8,11 @@ Copiez la ligne de code ci-dessous.
 
 Collez-la sur votre site, juste avant la balise de fermeture </body>.
 
-Remplacez URL_DE_VOTRE_WEBHOOK_N8N par votre propre URL de webhook n8n.
+Remplacez https://n8n.srv800894.hstgr.cloud/webhook-test/a721b1dd-32e4-4653-a599-8e3e946a3015 par votre propre URL de webhook n8n.
 
 Code d'intégration
-<script src="https://VOTRE_NOM_UTILISATEUR.github.io/NOM_DE_VOTRE_DEPOT/chat-widget.js" 
-        data-n8n-url="URL_DE_VOTRE_WEBHOOK_N8N" 
+<script src="https://ProjectView.github.io/Agent-IA---Projectview/chat-widget.js" 
+        data-n8n-url="https://n8n.srv800894.hstgr.cloud/webhook-test/a721b1dd-32e4-4653-a599-8e3e946a3015" 
         defer>
 </script>
 
