@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démo du Widget de Chat</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #4f46e5;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .placeholder {
+            height: 200vh; /* Crée beaucoup d'espace pour pouvoir faire défiler */
+            background: repeating-linear-gradient(
+                45deg,
+                #f0f0f0,
+                #f0f0f0 10px,
+                #e0e0e0 10px,
+                #e0e0e0 20px
+            );
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Page de Démonstration du Widget de Chat</h1>
+        <p>Faites défiler la page vers le bas. Un bouton de chat devrait apparaître dans le coin inférieur droit.</p>
+        <p>En cliquant dessus, la page défilera tout en bas et la fenêtre de chat s'ouvrira.</p>
+        <div class="placeholder">
+            <p>Cet espace est volontairement grand<br>pour simuler une longue page et permettre le défilement.</p>
+        </div>
+        <h2>Fin de la page</h2>
+        <p>Le widget de chat est maintenant visible et prêt à être utilisé.</p>
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!--            ICI, ON INTÈGRE LE WIDGET DE CHAT                      -->
+    <!-- =================================================================== -->
+    <!--
+        NOTE : Ce script pointe vers un fichier local "./chat-widget.js" pour le test.
+        Vos clients utiliseront l'URL complète de votre GitHub Pages.
+        Votre URL de webhook a été insérée pour ce test.
+    -->
+    <script src="./chat-widget.js" 
+            data-n8n-url="https://n8n.srv800894.hstgr.cloud/webhook-test/a721b1dd-32e4-4653-a599-8e3e946a3015" 
+            defer>
+    </script>
+    <!-- =================================================================== -->
+
+</body>
+</html>
